@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <link href="C:\Users\malak_000\Downloads\fontawesome-free-5.15.3-web\fontawesome-free-5.15.3-web/css/all.css"
-        rel="stylesheet">
+
 </head>
 
 <body>
-    <div class="bar">
+    <div class="bar" id="home">
         <div class="info-bar">
             <div class="logo">
                 <h2>Dr.<span>care</span></h2>
@@ -25,7 +25,7 @@
                         <span class="iconify" data-icon="fa-solid:map"></span>
                     </div>
                     <div class="text">
-                        <span>Address: 198 West 21th Street, Suite 721 New York NY 10016 </span>
+                        <span>Address: 14 Abd El-malak Street, cairo</span>
                     </div>
                 </div>
                 <div class="email box">
@@ -60,22 +60,28 @@
 
 
             </ul>
+            <a href="#booking">
+                <button class="temp-btn">Make an appointment</button>
+            </a>
 
-            <button class="temp-btn">Make an appointment</button>
-
-
+        </div>
+    </div>
+    <div class="header-section">
+        <div class="layer">
+            <div class="center">
+            </div>
         </div>
     </div>
     <div class="slider">
         <div class="slide fade">
-            <div class="content">
+            <div class="content animate__animated animate__fadeInUp">
                 <h1>Helping Your <br><span>Stay Happy One</span></h1>
                 <h3>Everyday We Bring Hope and Smile to the Patient We Serve</h3>
                 <button class="temp-btn"> View our works</button>
-            </div>
-            <div class="dots">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
             </div>
         </div>
         <div class="slide fade">
@@ -83,26 +89,26 @@
                 <h1>We care <br><span>About your health</span> </h1>
                 <h3>Your Health is Our Top Priority with Comprehensive, Affordable medical.</h3>
                 <button class="temp-btn"> View our works</button>
-            </div>
-            <div class="dots" style="text-align: center; ">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
             </div>
         </div>
     </div>
-    <div class="service-container">
-        <div class="box">
+    <div class="service-container scroll-animations">
+        <div class="box animate__animated animate__slow">
             <div class="icon">
                 <img src="./images/doctor.png" alt="doctor">
             </div>
-            <h2>
+            <h2 class="">
                 Qualitfied Doctors
             </h2>
             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
 
             </p>
         </div>
-        <div class="box">
+        <div class="box animate__animated  animate__slower">
             <div class="icon">
                 <img src="./images/ambulance.png" alt="doctor">
             </div>
@@ -113,7 +119,7 @@
                 Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
             </p>
         </div>
-        <div class="box">
+        <div class="box animate__animated animate__slow">
             <div class="icon">
                 <img src="./images/stethoscope.png" alt="doctor">
             </div>
@@ -124,7 +130,7 @@
                 Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic
             </p>
         </div>
-        <div class="box">
+        <div class="box animate__animated animate__slower">
             <div class="icon">
                 <img src="./images/24-hours.png" alt="doctor">
             </div>
@@ -136,11 +142,11 @@
         </div>
     </div>
 
-    <div class="about-drcare">
+    <div class="about-drcare scroll-animations">
         <div class="photo">
             <img src="./images/about.jpg" alt="about">
         </div>
-        <div class="content">
+        <div class="content animate__animated">
             <h5>ABOUT DR.CARE</h5>
             <h1>
                 Medical specialty concerned with the care of acutely ill hospitalized patients
@@ -205,13 +211,20 @@
             </div>
         </div>
     </div>
-    <div class="department">
-        <div class="menu">
-            <div class="item Neurolgy active"> Neurology</div>
-            <div class="item Surgical">Surgical</div>
-            <div class="item Dental">Dental</div>
-            <div class="item Ophthalmology">Ophthalmology</div>
-            <div class="item Cardiology">Cardiology</div>
+    <div class="department scroll-animations">
+        <div class="contant animate__animated">
+            <h5>DEPARTMENTS</h>
+                <h1>Clinic Departments</h1>
+                <h6>Separated they live in. A small river named Duden flows by their place and supplies it with the
+                    <br> regelialia. It is a paradisematic country
+                </h6>
+        </div>
+        <div class="menu ">
+            <div class="item Neurolgy active animate__animated animate__faster"> Neurology</div>
+            <div class="item Surgical animate__animated animate__fast">Surgical</div>
+            <div class="item Dental animate__animated animate__slow">Dental</div>
+            <div class="item Ophthalmology animate__animated animate__slow">Ophthalmology</div>
+            <div class="item Cardiology animate__animated animate__slower">Cardiology</div>
         </div>
         <div class="dep">
             <div class="description">
@@ -278,7 +291,7 @@
             </div>
         </div>
     </div>
-    <div class="doctor">
+    <div class="doctor scroll-animations">
         <h4>doctors</h4>
         <h1>Our Qualitfied Doctors</h1>
         <p>Separated they live in. A small river named Duden flows by their place and supplies it with the
@@ -286,7 +299,7 @@
             regelialia.
             It is a paradisematic country</p>
         <div class="contant">
-            <div class="blog">
+            <div class="blog animate__animated fadeleft animate__slower">
                 <div class="photo">
                     <img src="./images/depositphotos_12660351-stock-photo-satisfied-smiling-mature-doctor.jpg" alt="">
                 </div>
@@ -296,7 +309,7 @@
                     <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
                 </div>
             </div>
-            <div class="blog">
+            <div class="blog animate__animated fadeleft animate__slow">
                 <div class="photo">
                     <img src="./images/s.jpg" alt="">
                 </div>
@@ -306,7 +319,7 @@
                     <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
                 </div>
             </div>
-            <div class="blog">
+            <div class="blog animate__animated fadeleft animate__fast">
                 <div class="photo">
                     <img src="./images/doctor-smiling-with-stethoscope_1154-36.jpg" alt="">
                 </div>
@@ -316,7 +329,7 @@
                     <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
                 </div>
             </div>
-            <div class="blog">
+            <div class="blog animate__animated fadeleft animate__faster">
                 <div class="photo">
                     <img src="images/doctor5-1.png" alt="">
                 </div>
@@ -327,8 +340,104 @@
                 </div>
             </div>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
-    <div class="booking">
+    <div class="patient">
+        <div class="content">
+            <div class="center">
+                <h4>TESTIMONIALS</h4>
+                <h1>Our Patients Says About Us</h1>
+                <p>Separated they live in. A small river named Duden flows by their place and supplies it with the<br>
+                    necessary regelialia. It is a paradisematic country</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="patient-slider">
+            <div class="patient-slide animate__animated animate__slideInRight"
+                data-url="./images/pexels-jeandaniel-francoeur-7596690.jpg">
+                <div class="content">
+                    <div class="patient-img""></div>
+                    <div class=" qoute">
+                        <span class="iconify" data-icon="fa-solid:quote-left" data-inline="false"
+                            style="color: #2f89fc;" data-width="66px"></span>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and<br> Consonantia,
+                            there live the blind texts.</p>
+                        <h5>Mark Huff</h5>
+                        <h6>Student</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="patient-slide animate__animated animate__slideInRight"
+                data-url="./images/pexels-michael-burrows-7129056.jpg">
+                <div class="content">
+                    <div class="patient-img"></div>
+                    <div class="qoute">
+                        <span class="iconify" data-icon="fa-solid:quote-left" data-inline="false"
+                            style="color: #2f89fc;" data-width="66px"></span>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and<br> Consonantia,
+                            there live the blind texts.</p>
+                        <h5>Rodel Golez</h5>
+                        <h6>striper</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="patient-slide animate__animated animate__slideInRight"
+                data-url="./images/pexels-nappy-936019.jpg">
+                <div class="content">
+                    <div class="patient-img"></div>
+                    <div class="qoute">
+                        <span class="iconify" data-icon="fa-solid:quote-left" data-inline="false"
+                            style="color: #2f89fc;" data-width="66px"></span>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and<br> Consonantia,
+                            there live the blind texts.</p>
+                        <h5>Ken Bosh</h5>
+                        <h6>Manager</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="patient-slide animate__animated animate__slideInRight"
+                data-url="./images/pexels-spencer-selover-775358.jpg">
+                <div class="content">
+                    <div class="patient-img"></div>
+                    <div class="qoute">
+                        <span class="iconify" data-icon="fa-solid:quote-left" data-inline="false"
+                            style="color: #2f89fc;" data-width="66px"></span>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and<br> Consonantia,
+                            there live the blind texts.</p>
+                        <h5>Hnery Bee</h5>
+                        <h6>Bussinessman</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="patient-slide animate__animated animate__slideInRight"
+                data-url="./images/pexels-suit-1043473\ .jpg">
+                <div class="content">
+                    <div class="patient-img"></div>
+                    <div class="qoute">
+                        <span class="iconify" data-icon="fa-solid:quote-left" data-inline="false"
+                            style="color: #2f89fc;" data-width="66px"></span>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and<br> Consonantia,
+                            there live the blind texts.</p>
+                        <h5>Racky Maurice</h5>
+                        <h6>Farmer</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="dots" style="top: 0;">
+                <span class="dot" onclick="currentSlide(1,0)"></span>
+                <span class="dot" onclick="currentSlide(2,0)"></span>
+                <span class="dot" onclick="currentSlide(3,0)"></span>
+                <span class="dot" onclick="currentSlide(4,0)"></span>
+                <span class="dot" onclick="currentSlide(5,0)"></span>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="booking" id="booking">
         <div class="consultation">
             <div class="contant">
                 <h4>consultation</h4>
@@ -397,11 +506,88 @@
             </div>
         </div>
     </div>
+    <br><br><br>
+    <div class="pricing scroll-animations">
+        <div class="content animate__animated">
+            <div class="center">
+                <h4>PRICING</h4>
+                <h1>Our Pricing</h1>
+                <p>Separated they live in. A small river named Duden flows by their place and supplies it with the<br>
+                    necessary regelialia. It is a paradisematic country</p>
+            </div>
+        </div>
+        <div class="price-plan">
+            <div class="plan animate__animated animate__slower">
+                <div class="content">
+                    <h2>Basic</h2>
+                    <span class="price">$24.50</span>
+                    <span class="session">/ session</span>
+                    <p>Diagnostic Services<br>
+                        Professional Consultation<br>
+                        Tooth Implants<br>
+                        Surgical Extractions<br>
+                        Teeth Whitening</p>
+                </div>
+                <div>
+                    <button class="price-btn">Get offer</button>
+                </div>
+            </div>
+            <div class="plan animate__animated animate__slow">
+                <div class="content">
+                    <h2>Standard</h2>
+                    <span class="price">$34.50</span>
+                    <span class="session">/ session</span>
+                    <p>Diagnostic Services<br>
+                        Professional Consultation<br>
+                        Tooth Implants<br>
+                        Surgical Extractions<br>
+                        Teeth Whitening</p>
+                </div>
+                <div>
+                    <button class="price-btn">Get offer</button>
+                </div>
+            </div>
+            <div class="plan animate__animated animate__fast">
+                <div class="content">
+                    <h2>Premium</h2>
+                    <span class="price">$54.50</span>
+                    <span class="session">/ session</span>
+                    <p>Diagnostic Services<br>
+                        Professional Consultation<br>
+                        Tooth Implants<br>
+                        Surgical Extractions<br>
+                        Teeth Whitening</p>
+                </div>
+                <div>
+                    <button class="price-btn">Get offer</button>
+                </div>
+            </div>
+            <div class="plan animate__animated animate__faster">
+                <div class="content">
+                    <h2>Premium</h2>
+                    <span class="price">$89.50</span>
+                    <span class="session">/ session</span>
+                    <p>Diagnostic Services<br>
+                        Professional Consultation<br>
+                        Tooth Implants<br>
+                        Surgical Extractions<br>
+                        Teeth Whitening</p>
+                </div>
+                <div>
+                    <button class="price-btn">Get offer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <br><br>
     <footer>
         <div class="main-content">
             <div class="first box">
                 <div class="about">
-                    <h2>Dr.<span>care</span></h2>
+                    <a href="#home">
+                        <h2>Dr.<span>care</span></h2>
+                    </a>
                     <div class="content">
                         <p>Far far away, behind the word mountains, far from the countries Vokalia and
                             Consonantia,
@@ -426,9 +612,15 @@
                             <span class="text">malakmaurice123@gmail.com</span>
                         </div>
                         <div class="social">
-                            <span class="iconify" data-icon="akar-icons:twitter-fill"></span>
-                            <span class="iconify" data-icon="akar-icons:instagram-fill"></span>
-                            <span class="iconify" data-icon="bx:bxl-facebook"></span>
+                            <a href="https://twitter.com/malak_maurice" target="_blank">
+                                <span class="iconify" data-icon="akar-icons:twitter-fill"></span>
+                            </a>
+                            <a href="https://www.instagram.com/malak_maurice/" target="_blank">
+                                <span class="iconify" data-icon="akar-icons:instagram-fill"></span>
+                            </a>
+                            <a href="https://www.facebook.com/malak.maurice.1" target="_blank">
+                                <span class="iconify" data-icon="bx:bxl-facebook" data-inline="false"></span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -439,27 +631,27 @@
                     <div class="list">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="#" onclick="displayHome()">
                                     <span class="iconify" data-icon="ion-ios-arrow-round-forward"></span>Home
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" onclick="displayAbout()">
                                     <span class="iconify" data-icon="ion-ios-arrow-round-forward"></span>About
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" onclick="dispalyDoctor()">
                                     <span class="iconify" data-icon="ion-ios-arrow-round-forward"></span>Services
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" onclick="displayDepartment()">
                                     <span class="iconify" data-icon="ion-ios-arrow-round-forward"></span>Deparments
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" onclick="displaContect()">
                                     <span class="iconify" data-icon="ion-ios-arrow-round-forward"></span>contact
                                 </a>
                             </li>
@@ -471,27 +663,27 @@
                     <div class="list">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="#" onclick="displayDepartment()">
                                     <span class="iconify" data-icon="ion-ios-arrow-round-forward"></span>Neurolgy
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" onclick="displayDepartment()">
                                     <span class="iconify" data-icon="ion-ios-arrow-round-forward"></span>Dentist
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" onclick="displayDepartment()">
                                     <span class="iconify" data-icon="ion-ios-arrow-round-forward"></span>Ophthalmology
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" onclick="displayDepartment()">
                                     <span class="iconify" data-icon="ion-ios-arrow-round-forward"></span>Cardiology
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" onclick="displayDepartment()">
                                     <span class="iconify" data-icon="ion-ios-arrow-round-forward"></span>Surgery
                                 </a>
                             </li>
@@ -503,25 +695,30 @@
                 <h2>Recent Blog</h2>
                 <div class="content">
                     <div class="first-blog">
-                        <a href="">
-                            <img src="https://preview.colorlib.com/theme/drcare/images/image_1.jpg" alt="recent blog">
-                        </a>
+                        <div>
+                            <a href="#">
+                                <img src="https://preview.colorlib.com/theme/drcare/images/image_1.jpg"
+                                    alt="recent blog">
+                            </a>
+                        </div>
                         <div class="data-blog">
                             <div class="heading">
-                                <a href="">Even the all-powerful Pointing has no control about</a>
+                                <a href="#">Even the all-powerful Pointing has no control about</a>
                             </div>
                             <div class="data">
                                 <div class="date">
-                                    <a href=""><span class="far fa-calendar-alt"></span>
+                                    <a href=""><span class="iconify" data-icon="ci:calendar" data-inline="false"></span>
                                         <span>Apr 13,2021</span></a>
                                 </div>
                                 <div class="admin">
-                                    <a href=""> <span class="fas fa-user"></span>
+                                    <a href=""> <span class="iconify" data-icon="dashicons:admin-users"
+                                            data-inline="false"></span>
                                         <span>Admin</span></a>
                                 </div>
                                 <div class="comment">
                                     <a href="">
-                                        <span class="fas fa-comment-alt"></span>
+                                        <span class="iconify" data-icon="bx:bxs-comment-detail"
+                                            data-inline="false"></span>
                                         <span>14</span>
                                     </a>
                                 </div>
@@ -538,16 +735,18 @@
                             </div>
                             <div class="data">
                                 <div class="date">
-                                    <a href=""><span class="far fa-calendar-alt"></span>
+                                    <a href=""><span class="iconify" data-icon="ci:calendar" data-inline="false"></span>
                                         <span>Apr 13,2021</span></a>
                                 </div>
                                 <div class="admin">
-                                    <a href=""> <span class="fas fa-user"></span>
+                                    <a href=""> <span class="iconify" data-icon="dashicons:admin-users"
+                                            data-inline="false"></span>
                                         <span>Admin</span></a>
                                 </div>
                                 <div class="comment">
                                     <a href="">
-                                        <span class="fas fa-comment-alt"></span>
+                                        <span class="iconify" data-icon="bx:bxs-comment-detail"
+                                            data-inline="false"></span>
                                         <span>14</span>
                                     </a>
                                 </div>
@@ -590,26 +789,74 @@
         </div>
     </footer>
     <script>
+        //section variables 
+        const header_section = document.querySelector(".header-section");
+        const Slider = document.querySelector(".slider");
+        const service = document.querySelector(".service-container");
+        const about_drcare = document.querySelector(".about-drcare");
+        const department = document.querySelector(".department");
+        const doctor = document.querySelector(".doctor");
+        const booking = document.querySelector(".booking");
+        const scroll_animations = Array.from(document.querySelectorAll(".scroll-animations .animate__animated"));
+        const pricing = document.querySelector(".pricing");
+        const patient = document.querySelector(".patient");
+        // end section variables
         var slideindex = 1;
+        var patientSlideIndex = 1;
+        // f is flag variable to indecate between manual and anutomatic slide 
+        var f = 1;
         showSlide(slideindex);
-        function currentSlide(n) {
-            showSlide(slideindex = n);
+        function currentSlide(n, flag = 1) {
+            f = 0;
+            if (flag)
+                showSlide(slideindex = n);
+            else
+                showSlide(patientSlideIndex = n);
+
         }
-        function showSlide(n) {
+        function showSlide() {
             var i;
             var slides = document.getElementsByClassName("slide");
+            var patientSlide = document.querySelectorAll(".patient-slide");
             var dots = document.getElementsByClassName("dot");
+            var patientDot = document.querySelectorAll(".patient .dot");
+
+            if (slideindex > slides.length) slideindex = 1;
+            if (patientSlideIndex > patientSlide.length) patientSlideIndex = 1;
+
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
+            }
+            for (i = 0; i < patientSlide.length; i++) {
+                patientSlide[i].style.display = "none";
             }
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
             }
+            for (i = 0; i < patientDot.length; i++) {
+                patientDot[i].className = patientDot[i].className.replace(" active", "");
+            }
 
             slides[slideindex - 1].style.display = "block";
-            dots[slideindex - 1].className += " active";
+            patientSlide[patientSlideIndex - 1].style.display = "block";
+            dots[slideindex].className += " active";
+            patientDot[patientSlideIndex - 1].className += " active";
+
+            let url = patientSlide[patientSlideIndex - 1].dataset.url;
+            patientSlide[patientSlideIndex - 1].firstElementChild.firstElementChild.style.background = `url(${url}) no-repeat`;
+            patientSlide[patientSlideIndex - 1].firstElementChild.firstElementChild.style.backgroundSize = "contain";
+
+            if (f) {
+                slideindex++;
+                patientSlideIndex++;
+                setTimeout(showSlide, 2000);
+            }
         }
-        console.log(window);
+        // remove fadeIn animation from slider 
+        setTimeout(() => {
+            document.querySelector(".slider .content").classList.remove("animate__fadeInUp");
+        }, 2000);
+        // end of removing fadeIn animation from slider 
         const num = document.querySelectorAll(".counter");
         var i = 1;
         var j = 0;
@@ -617,18 +864,35 @@
         var m = 1;
         var a, b, c, d, flag = 1;
 
+        function isScrolledIntoView(ele) {
+            var docViewTop = document.documentElement.scrollTop;
+            var docViewBottom = docViewTop + window.innerHeight;
+
+            var elemTop = ele.offsetTop;
+            var elemBottom = elemTop + ele.offsetHeight;
+            // console.log(elemTop);
+            return docViewBottom >= elemTop && docViewTop <= elemBottom;
+        }
         window.onscroll = function () { myFunction() };
         function myFunction() {
-        
-            if (flag === 1 && window.scrollY > 2500 && window.scrollY < 3700) {
+            // var currentScroll = document.documentElement.scrollTop;
+            // currentScroll >= (booking.offsetTop) - 550 && currentScroll <= booking.offsetTop + booking.offsetHeight / 2)            
+            if (flag === 1 && isScrolledIntoView(booking) === true) {
                 flag = 0;
                 a = setInterval(myLoop, 300);
                 b = setInterval(myLoop2, 2);
                 c = setInterval(myLoop3, 9000 / 83);
                 d = setInterval(myLoop4, 30);
-                console.log(window.scrollY);
             }
-
+            // add animation class to elements when scrolling into view
+            scroll_animations.forEach(element => {
+                if (isScrolledIntoView(element) === true) {
+                    if (element.classList.contains("fadeleft"))
+                        element.classList.add("animate__fadeInLeft");
+                    else
+                        element.classList.add("animate__fadeInUp");
+                }
+            });
         }
 
         function myLoop() {
@@ -671,7 +935,7 @@
         const item = document.querySelector(".department .menu");
         item.addEventListener("click", myfun);
         function myfun(e) {
-
+            console.log(e);
             const active = document.querySelectorAll(".department .active");
             for (let h = 0; h < active.length; h++)
                 active[h].className = active[h].className.replace("active", "");
@@ -700,10 +964,130 @@
                     break;
             }
             img.style.backgroundImage = url;
-            console.log(url);
             setTimeout(function () { dep.className = "dep"; }, 1000);
         }
+        // nav-bar event on click
 
+        const nav_bar = Array.from(document.querySelectorAll(".nav-bar li"));
+        nav_bar.forEach(element => {
+            element.addEventListener("click", displayNavBar);
+        });
+        function displayNavBar(e) {
+            switch (e.target.textContent) {
+                case 'HOME':
+                    displayHome();
+                    break;
+                case 'ABOUT':
+                    displayAbout();
+                    break;
+                case 'DOCTOR':
+                    dispalyDoctor();
+                    break;
+                case 'DEPARTMENTS':
+                    displayDepartment();
+                    break;
+                case 'PRICING':
+                    displayPricing();
+                    break;
+            }
+        }
+        function displayAbout() {
+            header_section.style.display = "block";
+            let h1, p;
+            Slider.style.display = "none";
+            service.style.display = "none";
+            about_drcare.style.display = "flex";
+            booking.style.display = "flex";
+            department.style.display = "none";
+            doctor.style.display = "none";
+            pricing.style.display = "none";
+            h1 = "About Us";
+            P = "ABOUT US";
+            const html = `
+                <h1>${h1}</h1>
+                <p><span style= "cursor: pointer"onclick="displayHome()" >HOME</span> > ${P} > </p>`;
+            header_section.firstElementChild.firstElementChild.innerHTML = html;
+        }
+        function dispalyDoctor() {
+            header_section.style.display = "block";
+            let h1, p;
+            Slider.style.display = "none";
+            service.style.display = "none";
+            about_drcare.style.display = "none";
+            booking.style.display = "none";
+            department.style.display = "none";
+            doctor.style.display = "flex";
+            patient.style.display = "none"
+            pricing.style.display = "none";
+            h1 = "Qualified Doctors";
+            P = "DOCTOR";
+            const html = `
+                <h1>${h1}</h1>
+                <p><span style= "cursor: pointer"onclick="displayHome()" >HOME</span> > ${P} > </p>`;
+            header_section.firstElementChild.firstElementChild.innerHTML = html;
+        }
+        function displayDepartment() {
+            header_section.style.display = "block";
+            let h1, p;
+            Slider.style.display = "none";
+            service.style.display = "none";
+            about_drcare.style.display = "none";
+            doctor.style.display = "none";
+            booking.style.display = "none";
+            department.style.display = "block";
+            patient.style.display = "none"
+            pricing.style.display = "none";
+            h1 = "Clinical Department";
+            P = "DEPARTMENT";
+            const html = `
+                <h1>${h1}</h1>
+                <p><span style= "cursor: pointer"onclick="displayHome()" >HOME</span> > ${P} > </p>`;
+            header_section.firstElementChild.firstElementChild.innerHTML = html;
+        }
+
+        function displayPricing() {
+            header_section.style.display = "block";
+            let h1, p;
+            Slider.style.display = "none";
+            service.style.display = "none";
+            about_drcare.style.display = "none";
+            doctor.style.display = "none";
+            booking.style.display = "none";
+            department.style.display = "block";
+            patient.style.display = "none"
+            pricing.style.display = "block";
+            h1 = "Pricing";
+            P = "PRICING";
+            const html = `
+                <h1>${h1}</h1>
+                <p><span style= "cursor: pointer"onclick="displayHome()" >HOME</span> > ${P} > </p>`;
+            header_section.firstElementChild.firstElementChild.innerHTML = html;
+        }
+
+        function displayHome() {
+            header_section.style.display = "none";
+            Slider.style.display = "block";
+            service.style.display = "flex";
+            about_drcare.style.display = "flex";
+            booking.style.display = "flex";
+            department.style.display = "block";
+            doctor.style.display = "flex";
+            patient.style.display = "block"
+            pricing.style.display = "block";
+        }
+        let pricePlan = Array.from(document.querySelectorAll(".price-plan .plan"));
+        pricePlan.forEach(element => {
+            element.addEventListener("mouseenter", e => {
+                e.target.querySelector(".price").style.color = "#ff8000";
+                e.target.querySelector(".price-btn").style.background = "#ff8000";
+                e.target.querySelector(".content").style.border = "2px #ff8000 solid";
+            });
+            element.addEventListener("mouseleave", e => {
+                e.target.querySelector(".price").style.color = "rgb(47, 137, 252)";
+                e.target.querySelector(".price-btn").style.background = "rgb(47, 137, 252)";
+                e.target.querySelector(".content").style.border = "2px #2f89fc solid";
+            })
+        });
     </script>
 </body>
 

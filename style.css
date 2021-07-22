@@ -108,37 +108,79 @@ p {
   margin-right: 300px;
 }
 
+.header-section {
+  background: url(./images/bg_1.jpg);
+  height: 300px;
+  position: relative;
+  display: none;
+}
+
+.layer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  background: rgb(47, 137, 252);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.layer p {
+  text-align: center;
+  color: white;
+}
+
+.layer p span:hover {
+  color: black;
+}
+
+.layer h1 {
+  color: rgba(255, 255, 255);
+  font-weight: 900;
+  font-size: 42px;
+}
+
 .slider {
   position: relative;
   margin: auto;
 }
 
-.slide {
-  display: none;
+.slider .slide {
   height: 600px;
+}
+
+.dots {
+  position: relative;
+  text-align: center;
+  top: 110px;
 }
 
 .dot {
   cursor: pointer;
   width: 12px;
   height: 12px;
-  background-color: #bbb;
+  background-color: #aa9191;
   display: inline-block;
   border-radius: 50%;
   margin: 2px;
   transition: background-color 0.6s ease;
 }
 
-.dots {
-  position: absolute;
-  top: 95%;
-  left: 50%;
+.active, .dot:hover {
+  background-color: #bbb;
+}
+
+.patient .active, .patient .dot:hover {
+  background-color: #2f89fc;
 }
 
 .slide .content {
   position: absolute;
   bottom: 35%;
-  left: 5%
+  left: 5%;
+  width: 100%;
 }
 
 .slide .content h1 {
@@ -163,10 +205,6 @@ p {
 .slide .temp-btn {
   margin-top: 20px;
   width: 300px;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
 }
 
 .fade {
@@ -195,12 +233,12 @@ p {
 }
 
 .slide:first-child {
-  background: url('E:/medical website/images/bg_1.jpg') no-repeat;
+  background: url(./images/bg_1.jpg) no-repeat;
   background-size: cover;
 }
 
 .slide:nth-child(2) {
-  background: url('E:/medical website/images/bg_2.jpg') no-repeat;
+  background: url(./images/bg_2.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -303,7 +341,8 @@ p {
   width: 50%;
   display: flex;
 }
- .box .icon {
+
+.box .icon {
   border: 2px solid #2F89FC;
   width: 60px;
   height: 55px;
@@ -311,25 +350,50 @@ p {
   text-align: center;
 }
 
- .box img {
+.box img {
   width: 35px;
   height: 35px;
   position: relative;
   top: 10px;
 }
 
-.box .content {
+.about-drcare .box .content {
   margin-left: 20px;
   width: 70%;
 }
- .box .content p {
+
+.box .content p {
   margin-top: 10px;
 }
 
-.department{
+.department {
   width: 100%;
 }
-.department .menu{
+
+.department .contant {
+  text-align: center;
+  color: black;
+}
+
+.department .contant h5 {
+  letter-spacing: 2px;
+}
+
+.department .contant h1 {
+  font-weight: 700;
+  color: rgba(0, 0, 0, .8);
+}
+
+.department .contant h6 {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  color: rgba(0, 0, 0, .6);
+}
+.department .box .content {
+  margin-left: 20px;
+  width: 70%;
+}
+.department .menu {
   color: black;
   display: flex;
   margin-left: 6%;
@@ -337,27 +401,33 @@ p {
   height: 90px;
   background-color: #0000000D;
 }
-.department .menu .item{
- width: 20%;
+
+.department .menu .item {
+  width: 20%;
   cursor: pointer;
   text-align: center;
   padding-top: 40px;
   font-size: 18px;
   font-weight: 600;
 }
-.department .menu .item:hover,.department .menu .active{
+
+.department .menu .item:hover, .department .menu .active {
   background-color: #2f89fc;
 }
-.department h1{
+
+.department h1 {
   color: black;
 }
-.department .block{
+
+.department .block {
   display: none;
 }
-.department .active{
+
+.department .active {
   display: block;
 }
-.department .dep{
+
+.department .dep {
   display: flex;
   flex-direction: row;
   width: 87%;
@@ -368,43 +438,73 @@ p {
   padding-left: 4%;
   margin-top: 20px;
 }
-.department .dep .description{
+
+.department .dep .description {
   width: 65%;
 }
-.department .dep .description .boxes{
+
+.department .dep .description .boxes {
   display: flex;
-  flex-wrap:wrap ;
+  flex-wrap: wrap;
 }
-.department .box{
+
+.department .box {
   width: 50%;
   display: flex;
 }
-.department .box h4{
+
+.department .box h4 {
   padding: 0;
-margin: 0;
-color: black;
+  margin: 0;
+  color: black;
 }
-.department .dep .photo{
+
+.department .dep .photo {
   width: 30%;
   overflow: hidden;
   background-image: url(./images/Neurolgy.jpg);
- 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin-right:4% ;
+  margin-right: 4%;
   margin-bottom: 40px;
   margin-left: 5%;
 }
 
-.department .dep .description h1{
+.department .dep .description h1 {
   margin: 0;
   padding: 0;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.8);
 }
+
 .booking {
   display: flex;
+}
+
+.animate-bottom {
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 2s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 100%;
+  }
+}
+
+@keyframes animatebottom {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 100%;
+  }
 }
 
 .booking .consultation {
@@ -589,13 +689,131 @@ color: black;
 .doctor .contant .blog .text p {
   width: 85%;
 }
-.doctor .contant .blog .text h1{
+
+.doctor .contant .blog .text h1 {
   margin-bottom: 20px;
   font-size: 22px;
 }
-.doctor .contant .blog .text h4{
+
+.doctor .contant .blog .text h4 {
   color: rgba(0, 0, 0, 0.4);
   margin-bottom: 10px;
+}
+
+.patient {
+  background-color: #fafafa;
+  padding: 80px;
+}
+
+.content .center {
+  text-align: center;
+}
+
+.content .center h4 {
+  color: rgba(0, 0, 0, .8);
+  letter-spacing: 4px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.content .center h1 {
+  color: rgba(0, 0, 0, .8);
+  font-weight: 900;
+}
+
+.patient-slide .content {
+  display: flex;
+  color: #141313;
+  justify-content: center;
+  position: relative;
+  ;
+}
+
+.patient-slide .patient-img {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 10%;
+  background: url(./images/pexels-suit-1043473\ .jpg) no-repeat;
+  background-size: contain;
+  top: 50px;
+  margin-right: 30px;
+}
+
+.patient-slide .content .qoute h6 {
+  color: #2f89fc;
+}
+
+.patient-slide .content .qoute h5 {
+  font-weight: 500;
+}
+
+.patient-slide .content .qoute p {
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.price-plan {
+  display: flex;
+  justify-content: center;
+}
+
+.price-plan .plan {
+  width: 20%;
+  position: relative;
+  margin: auto;
+}
+
+.price-plan .plan .content {
+  color: #141313;
+  text-align: center;
+  width: 280px;
+  border: 2px #2f89fc solid;
+  border-radius: 5px;
+}
+
+.price-plan .plan h2 {
+  font-weight: 500;
+  padding: 15px;
+  padding-bottom: 35px;
+}
+
+.price-plan .plan .price {
+  font-size: 28px;
+  font-weight: 900;
+  color: rgb(47, 137, 252);
+}
+
+.price-plan .plan .session {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.price-plan .plan p {
+  line-height: 3;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+
+.price-plan .plan .price-btn {
+  background-color: rgb(47, 137, 252);
+  border: 1px solid;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 25px;
+  padding: 10px;
+  position: absolute;
+  bottom: -21px;
+  left: 70px;
+  width: 50%;
+  overflow: visible;
+}
+
+.price-plan .plan .price-btn:hover {
+  background-color: #ff8000;
 }
 
 footer {
@@ -611,7 +829,7 @@ footer {
   padding-left: 1.5rem;
   background: #141313;
   padding-bottom: 3rem;
-  padding-top: 2rem;
+  padding-top: 4rem;
   justify-content: space-evenly;
 }
 
@@ -619,7 +837,7 @@ footer {
   width: 20rem;
 }
 
-h2 {
+footer h2 {
   margin-bottom: 30px;
   margin-top: 20px;
   color: #fff;
@@ -646,6 +864,10 @@ ul li {
   padding-bottom: 10px;
 }
 
+.main-content .first {
+  margin-left: 60px;
+}
+
 .main-content .first .about h2 {
   color: #2f89fc;
 }
@@ -656,6 +878,12 @@ ul li {
 
 .main-content .first .content {
   width: 90%;
+  margin: 0;
+}
+
+.main-content .first .content p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
 }
 
 .main-content .first .question {
@@ -692,6 +920,8 @@ ul li {
   line-height: 40px;
   border-radius: 50%;
   cursor: pointer;
+  width: 40px;
+  height: 40px;
 }
 
 .main-content .first .question .text {
@@ -699,8 +929,11 @@ ul li {
   font-size: 14px;
 }
 
-.second {
+.main-content .second {
   margin-left: 40px;
+  margin-right: 0;
+  padding: 0;
+  width: 10rem;
 }
 
 .second .service {
@@ -710,6 +943,7 @@ ul li {
 .third .first-blog {
   display: flex;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .third .second-blog {
@@ -721,12 +955,10 @@ ul li {
   height: 80px;
 }
 
-.third .data-blog {
+.main-content .third .content .data-blog {
+  margin: 0;
   margin-left: 20px;
-}
-
-.third .data-blog .heading {
-  width: 75%;
+  width: 100%;
 }
 
 .third .data-blog .heading a {
